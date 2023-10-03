@@ -145,3 +145,25 @@ section form button {
     bottom: 0;
     width: 100%;
 }
+
+
+/* Estilos CSS para el botón de flecha */
+.scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--color-oscuro);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    opacity: 0.5;
+}
+
+.scroll-to-top:hover {
+    opacity: 1;
+}

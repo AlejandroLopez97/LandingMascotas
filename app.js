@@ -37,3 +37,30 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const footer = document.querySelector('.end');
+    const scrollBtn = document.getElementById('scrollBtn');
+
+    // Función para controlar la visibilidad del botón de flecha
+    function toggleScrollButton() {
+        if (window.scrollY > 0) {
+            footer.style.backgroundColor = 'transparent';
+            scrollBtn.style.display = 'block';
+        } else {
+            footer.style.backgroundColor = 'rgb(242, 188, 141)';
+            scrollBtn.style.display = 'none';
+        }
+    }
+
+    // Listener para controlar el scroll y el botón de flecha
+    window.addEventListener('scroll', toggleScrollButton);
+
+    // Listener para desplazarse hacia arriba cuando se hace clic en el botón
+    scrollBtn.addEventListener('click', function () {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+});
