@@ -61,6 +61,7 @@ header nav ul li a:hover{
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
     padding: 20px;
+    margin-bottom: 5%;
 }
 
 .featured-products {
@@ -80,8 +81,8 @@ p{
 }
 
 .product-1 img, .product-2 img {
-    width: 50%;
-    border-radius: 50%;
+    width: 40%;
+    border-radius: 20%;
 }
 
 /* Estilos para el formulario de contacto */
