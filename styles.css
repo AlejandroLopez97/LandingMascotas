@@ -3,6 +3,7 @@
     --color-secundario: rgb(240, 148, 67);
     --color-terciario: rgb(112, 87, 65);
     --color-oscuro: rgb(112, 69, 31);
+    --color-claro: rgb(255, 226, 201);
 }
 
 /* Reset de estilos para quitar márgenes y rellenos predeterminados */
@@ -83,6 +84,15 @@ p{
 .product-1 img, .product-2 img {
     width: 40%;
     border-radius: 20%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-1:hover img {
+    transform: scale(1.1);
+}
+
+.product-2:hover img {
+    transform: scale(1.1);
 }
 
 /* Estilos para el formulario de contacto */
