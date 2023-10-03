@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./images/perro2.png" type="image/x-icon">
+    <title>Tienda de Mascotas</title>
+</head>
+<body>
+    <header class="Navbar">
+        <nav class="menu">
+            <img src="./images/la-tienda-de-animales.png" alt="Pet shop" id="pet-shop"><br>
+            <h1 id="title">Tienda de Mascotas</h1>
+            <ul>
+                <li id="home"><a href="#">Inicio</a></li>
+                <li id="products"><a href="#">Productos</a></li>
+                <li id="contacts"><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="container">
+
+        <section class="featured-products">
+            <article class="product-1">
+                <img src="./images/mascotas.jpg" alt="Mascotas">
+                <h2>Servicios Veterinarios</h2>
+            </article>
+    
+            <article class="product-2">
+                <img src="producto2.jpg" alt="Producto 2">
+                <h2>Market Place</h2>
+            </article>
+        </section>
+
+        <section class="contact">
+            <h2>Contacto</h2>
+            <form class="form-contact">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+    
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" required>
+    
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+    </section>  
+
+    <footer class="end">
+        <p>&copy; 2023 Tienda de Mascotas</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
